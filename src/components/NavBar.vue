@@ -3,10 +3,10 @@
     <nav class="container mx-auto divide-y divide-solid">
       <div class="relative flex justify-between py-3">
           <div class="size-10 logo">
-              <router-link to="/"><img src="../assets/food.svg" alt="logo" class="drop-shadow-sm"></router-link>
+              <router-link to="/"><img src="/src/assets/food.svg" alt="logo" class="drop-shadow-sm"></router-link>
           </div>
           <div class="menu-icon size-10">
-            <img :src="`../src/assets/${menu ? 'menu-close':'menu-open'}.svg`" alt="menu-icon" class="hover:cursor-pointer" @click="toggleMenu">
+            <img :src="`./assets/${menu ? 'menu-close':'menu-open'}.svg`" alt="menu-icon" class="hover:cursor-pointer" @click="toggleMenu">
           </div>
           <div class="bg-gray-300 menu-options closed dark:bg-gray-800 dark:text-white">
             <router-link activeClass="active" class="hover:text-rose-500 hover:font-semibold" @click="menu=false" to="/get-cooking">Home</router-link>
@@ -16,7 +16,7 @@
             <router-link activeClass="active" class="hover:text-rose-500 hover:font-semibold" @click="menu=false" to="/get-cooking/ingredient">Search by Ingredients</router-link>
           </div>
           <div class="size-10 theme">
-              <img :src="`../src/assets/${darkTheme ? 'moon':'sun'}.svg`" alt="theme-icon" class="hover:cursor-pointer" @click="themeChange">
+              <img :src="`./assets/${darkTheme ? 'moon':'sun'}.svg`" alt="theme-icon" class="hover:cursor-pointer" @click="themeChange">
           </div>
       </div>
     </nav>

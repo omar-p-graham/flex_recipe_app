@@ -7,7 +7,7 @@
       <router-link :to="`/get-cooking/results/area/${area}`" v-for="(area,index) of areas" :key="index" class="p-0 text-center hover:font-bold">
         <div class="grid area">
           <div class="area-flag">
-            <img :src="`../src/assets/flags/${(area).toLowerCase()}.svg` || '../assets/flags/unknown.svg'" :alt="`${area}-Flag`" class="object-fit">
+            <img :src="`./assets/flags/${(area).toLowerCase()}.svg` || './assets/flags/unknown.svg'" :alt="`${area}-Flag`" class="object-fit">
           </div>
           <div class="area-name">
             <h3 class="text-xl">{{ area }}</h3>
