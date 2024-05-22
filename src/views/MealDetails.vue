@@ -12,7 +12,7 @@
         <section class="flex flex-wrap justify-between p-2">
           <div class="">
             <h3 class="font-bold underline">Origin</h3>
-            <p class="flex items-center"><img :src="`../../src/assets/flags/${meal.strArea}.svg` || '../../src/assets/flags/unknown.svg'" :alt="`${meal.strArea}-Flag`" class="mr-2 object-fit size-11"> {{ meal.strArea }}</p>
+            <p class="flex items-center"><img :src="`/assets/flags/${meal.strArea}.svg` || '/assets/flags/unknown.svg'" :alt="`${meal.strArea}-Flag`" class="mr-2 object-fit size-11"> {{ meal.strArea }}</p>
           </div>
           <div class="">
             <h3 class="font-bold underline">Category</h3>

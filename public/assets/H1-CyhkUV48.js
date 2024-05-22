@@ -1,0 +1,1 @@
+import{_ as e,o,c as s,q as c}from"./index-BDn0w4sc.js";const r={},n={class:"text-lg font-bold lg:text-5xl md:text-3xl text-rose-600"};function l(t,a){return o(),s("h1",n,[c(t.$slots,"default")])}const x=e(r,[["render",l]]);export{x as H};

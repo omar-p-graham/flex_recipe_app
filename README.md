@@ -1,7 +1,36 @@
-# Vue 3 + Vite
+# Flex-Recipe-Hub
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Table of contents
 
-## Recommended IDE Setup
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+## Overview
+
+An application to provide daily news articles at your finger tips on topics like Entertainment, Sports, Science, Technology, among others.
+
+### Screenshot
+
+![Desktop](./src/assets/screenshots/Desktop.png)
+![Mobile](./src/assets/screenshots/Mobile.png)
+
+### Links
+
+- Live Site URL: (https://main--flex-recipe-app.netlify.app/)
+
+## My Process
+
+### Built with
+
+- Vue.js [https://vuejs.org](https://vuejs.org)
+    - Pinia
+- SVG Repo [https://www.svgrepo.com/](https://www.svgrepo.com/)
+
+## Author
+
+- LinkedIn - https://www.linkedin.com/in/omar-p-graham/
+- Frontend Mentor - https://www.frontendmentor.io/profile/omar-p-graham
