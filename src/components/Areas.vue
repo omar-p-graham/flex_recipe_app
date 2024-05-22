@@ -7,7 +7,7 @@
       <router-link :to="`/get-cooking/results/area/${area}`" v-for="(area,index) of areas" :key="index" class="p-0 text-center hover:font-bold">
         <div class="grid area">
           <div class="area-flag">
-            <img :src="`/assets/flags/${(area).toLowerCase()}.svg` || '/assets/flags/unknown.svg'" :alt="`${area}-Flag`" class="object-fit">
+            <img :src="getFlags((area).toLowerCase()) || unknownFlag" :alt="`${area}-Flag`" class="object-fit">
           </div>
           <div class="area-name">
             <h3 class="text-xl">{{ area }}</h3>
@@ -25,11 +25,16 @@
 
   const kitchen = kitchenStore()
   const areas = ref([])
+  const unknownFlag = new URL('../assets/flags/unknown.svg', import.meta.url).href
 
   onMounted(() =>{
     kitchen.getAreas()
     areas.value = kitchen.$state.areas
   })
+
+  function getFlags(region){
+    return new URL(`../assets/flags/${region}.svg`, import.meta.url).href
+  }
 </script>
 
 <style scoped>

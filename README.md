@@ -11,24 +11,31 @@
 
 ## Overview
 
-An application to provide daily news articles at your finger tips on topics like Entertainment, Sports, Science, Technology, among others.
+Flex Recipe Hub is more than just a recipe site; it's a journey for the senses, inviting you to savor the world one plate at a time.
 
 ### Screenshot
 
 ![Desktop](./src/assets/screenshots/Desktop.png)
+![Desktop-Meal-Details](./src/assets/screenshots/Meal-Details.png)
+![Desktop-Search-Area](./src/assets/screenshots/Desktop-Areas.png)
 ![Mobile](./src/assets/screenshots/Mobile.png)
+![Mobile-Search-Category](./src/assets/screenshots/Mobile-Category.png)
 
 ### Links
 
-- Live Site URL: (https://main--flex-recipe-app.netlify.app/)
+- Live Site URL: (https://flex-recipe-app.vercel.app/)
 
 ## My Process
 
 ### Built with
 
 - Vue.js [https://vuejs.org](https://vuejs.org)
-    - Pinia
+    - Pinia [https://pinia.vuejs.org/](https://pinia.vuejs.org/)
+- TailwindCSS [https://tailwindcss.com/](https://tailwindcss.com/)
+- TheMealDB [https://www.themealdb.com/api.php](https://www.themealdb.com/api.php)
+- Axios [https://axios-http.com/](https://axios-http.com/)
 - SVG Repo [https://www.svgrepo.com/](https://www.svgrepo.com/)
+- Heroicons [https://heroicons.com/](https://heroicons.com/)
 
 ## Author
 

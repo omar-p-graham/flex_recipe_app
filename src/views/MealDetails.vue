@@ -12,7 +12,7 @@
         <section class="flex flex-wrap justify-between p-2">
           <div class="">
             <h3 class="font-bold underline">Origin</h3>
-            <p class="flex items-center"><img :src="`/assets/flags/${meal.strArea}.svg` || '/assets/flags/unknown.svg'" :alt="`${meal.strArea}-Flag`" class="mr-2 object-fit size-11"> {{ meal.strArea }}</p>
+            <p class="flex items-center"><img :src="areaFlag || unknownFlag" :alt="`${meal.strArea}-Flag`" class="mr-2 object-fit size-11"> {{ meal.strArea }}</p>
           </div>
           <div class="">
             <h3 class="font-bold underline">Category</h3>
@@ -83,9 +83,12 @@ const kitchen = kitchenStore()
 const route = useRoute()
 const id = ref(route.params.id)
 const meal = ref([])
+const unknownFlag = new URL('../assets/flags/unknown.svg', import.meta.url).href
+const areaFlag = ref('')
 
 onMounted(() => {
   meal.value = kitchen.$state.theMeals.filter(m => m.idMeal===id.value)[0]
+  areaFlag.value = new URL(`../assets/flags/${meal.value.strArea.toLowerCase()}.svg`, import.meta.url).href
 })
 </script>
 
